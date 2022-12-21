@@ -1,0 +1,256 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(4, 1, 63) 0%,
+    rgb(32, 32, 113) 51%,
+    rgb(4, 1, 63) 100%
+  );
+}
+
+h1.dt-task-section {
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-top: 165px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.45s ease;
+  padding: 22px 15%;
+  width: 100%;
+  /* height: 155px; */
+  z-index: 1000;
+  /* background: rgb(7, 3, 66); */
+  background: transparent;
+}
+
+nav.sticky {
+  background: rgb(2, 1, 35);
+  border-bottom: 1px solid #ffe11b7c;
+  padding: 12px 15%;
+}
+
+.logo {
+  width: 145px;
+  height: 145px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: #eee;
+  padding: 15px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+a.active {
+  color: goldenrod;
+  transition: 0.3s ease;
+}
+section {
+  margin: 20px auto;
+  border-bottom: 1px solid gold;
+}
+
+section.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-container {
+  width: 500px;
+  height: 700px;
+  background: rgb(254, 254, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 150px;
+ margin: 20px auto;
+  border: 3px solid #f7e38a;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+h1 {
+  color: darkblue;
+  text-decoration: underline;
+  padding: 30px;
+}
+
+span.id {
+  color: orange;
+}
+
+button {
+  padding: 12px;
+  margin: 0 15px 15px 0;
+  border-radius: 15px;
+  border: none;
+  background: rgb(25, 25, 203);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid rgb(25, 25, 203);
+  color: orange;
+  transition: 0.3s ease-in-out;
+}
+
+.day-container,
+.month-container,
+.date-container,
+.year-container,
+.time-container {
+  border: 2px solid rgb(25, 25, 203);
+  border-radius: 15px;
+  width: 400px;
+  padding: 7px;
+  margin: 10px;
+}
+
+.day-element,
+.month-element,
+.date-element,
+.year-element,
+.time-element {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: crimson;
+}
+
+p.fullDateTime {
+  font-size: 1rem;
+  padding: 10px;
+  color: rgb(71, 8, 147);
+}
+
+span.end {
+  font-weight: bold;
+}
+
+section.employeeSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(9, 31, 73);
+  border-radius: 15px;
+  border: 2px solid #f7e38a;
+
+  width: 800px;
+  height: 850px;
+  margin-top: 280px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.employeeSec h1 {
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+}
+p.employeeSal {
+  color: gold;
+  display: block;
+  width: 700px;
+}
+/* dark-mode section */
+#toggle-btn {
+  color: gold;
+  font-size: 1.25rem;
+}
+
+#toggle-btn:hover {
+  color: #6e05ed;
+}
+
+.dark {
+  color: black;
+  background: rgb(27, 27, 27);
+}
+
+@media (max-width: 1480px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+}
+
+@media only screen and (max-width: 795px) and (min-width: 360px)  {
+ .task-container {
+    margin-left: 162px;
+  }
+  h1.dt-task-section {
+  margin-right: -80px;
+  }
+}
+@media only screen and (max-width: 725px) and (min-max: 360px) {
+   h1.dt-task-section {
+   margin-right: 380px;
+   }
+ }
+
+ @media only screen and (max-width: 710px) {
+  h1.dt-task-section {
+  margin-right: -148px;
+  }
+}
+@media only screen and (max-width: 634px) {
+  h1.dt-task-section {
+  margin-right: -192px;
+  }
+}
+
+@media only screen and (max-width: 595px){
+  ht.dt-task-section {
+    margin-right: -292px;
+  }
+}
+@media only screen and (max-width: 398px){
+  .employeeSect{
+    margin-left: 1px
+}
+@media only screen and (max-width: 359px) and (min-width: 200px)  {
+  .task-container {
+     margin-left: 162px;
+   }
+ }

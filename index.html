@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Completion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./imgs/logo.png" alt="" />
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#employee">Employees</a></li>
+      </ul>
+      <!-- toggle button -->
+      <div id="toggle-btn" class="far fa-moon"></div>
+    </nav>
+      <!-- home section -->
+    <section class="home" id="home">
+      <h1 class="dt-task-section">Date Task Section</h1>
+      <div class="task-container">
+        <h1>Date<span class="id">ID</span></h1>
+        <button id="today-btn" class="today-btn">Click for Today's Date</button>
+
+        <div class="day-container">
+          <div class="day-element" id="day-element">
+            <h2>Day:</h2>
+            <p class="day" id="day"></p>
+          </div>
+        </div>
+
+        <div class="month-container">
+          <div class="month-element" id="month-element">
+            <h2>Month:</h2>
+            <p class="month" id="month"></p>
+          </div>
+        </div>
+
+        <div class="date-container">
+          <div class="date-element" id="date-element">
+            <h2>Date:</h2>
+            <p class="date" id="date"></p>
+          </div>
+        </div>
+
+        <div class="year-container">
+          <div class="year-element" id="year-element">
+            <h2>Year:</h2>
+            <p class="year" id="year"></p>
+          </div>
+        </div>
+
+        <div class="time-container">
+          <div class="time-element" id="time-element">
+            <h2>Time:</h2>
+            <p class="time" id="time"></p>
+          </div>
+        </div>
+
+        <p class="fullDateTime id=fullDateTime" id="fullDTM">Full Date Time</p>
+
+        <h7 class="copyright"
+          >Made by <span class="end">Derrick Washington</span></h7
+        >
+      </div>
+    </section>
+    <!-- Employee section -->
+    <section class="employeeSec" id="employee">
+      <h1>Employee section</h1>
+      <!-- List out employee feedback -->
+      <p class="employeeSal" id="empSal"></p>
+      <br />
+      <hr />
+      <p class="employeeSal" id="empSal2"></p>
+      <br />
+      <hr />
+      <p class="employeeSal" id="empSal3"></p>
+      <br />
+      <hr />
+      <p class="employeeSal" id="empSal4"></p>
+      <hr />
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
